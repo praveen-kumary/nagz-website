@@ -455,7 +455,7 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
   /* Footer mobile */
   .footer-premium{padding:64px 0 32px}
   .footer-premium__grid{gap:40px;margin-bottom:48px}
-  .footer-premium__logo-img{height:60px;width:auto;margin:0 auto}
+  .footer-premium__logo-img{height:80px;width:auto;margin:0 auto}
 
   /* Navbar mobile */
   .navbar{top:12px;width:calc(100% - 24px)}
@@ -464,7 +464,7 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
 
   /* Hero grid stacking */
   .hero-grid{gap:32px}
-  .floating-img{height:520px!important}
+  .floating-img{height:560px!important}
 
   /* Check-list mobile */
   .check-list__item{font-size:14px}
@@ -594,6 +594,7 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
   .footer-premium__logo-img { margin-left: auto; margin-right: auto; }
   .footer-premium__desc { margin-left: auto; margin-right: auto; }
   .footer-premium__socials { justify-content: center; }
+  .footer-premium__heading { text-align: center; }
   .footer-premium__nav { align-items: center; }
   .footer-premium__nav a { margin-left: auto; margin-right: auto; }
   .footer-premium__cta { text-align: center; }
