@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large source PNGs (only .webp used in production)
+testimonials/*.png
+images/*.png
+images/*.jpeg
+
+# Keep specific PNGs that are needed
+!apple-touch-icon.png
+!favicon.ico
+
+# Assets not used in production
+assets/
