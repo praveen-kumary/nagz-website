@@ -4,9 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Navbar scroll effect ---- */
   const navbar = document.querySelector('.navbar');
   if (navbar) {
-    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 60);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    let tickingNav = false;
+    window.addEventListener('scroll', () => {
+      if (!tickingNav) {
+        window.requestAnimationFrame(() => {
+          navbar.classList.toggle('scrolled', window.scrollY > 60);
+          tickingNav = false;
+        });
+        tickingNav = true;
+      }
+    }, { passive: true });
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
   }
 
   /* ---- Mobile burger ---- */
@@ -129,8 +137,15 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Back to Top Button ---- */
   const backToTop = document.getElementById('back-to-top');
   if (backToTop) {
+    let tickingBtt = false;
     window.addEventListener('scroll', () => {
-      backToTop.classList.toggle('visible', window.scrollY > 600);
+      if (!tickingBtt) {
+        window.requestAnimationFrame(() => {
+          backToTop.classList.toggle('visible', window.scrollY > 600);
+          tickingBtt = false;
+        });
+        tickingBtt = true;
+      }
     }, { passive: true });
 
     backToTop.addEventListener('click', () => {
