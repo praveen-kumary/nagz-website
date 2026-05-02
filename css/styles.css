@@ -33,8 +33,6 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:.95;letter-spacing:-.02e
 p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-font-smoothing:antialiased}
 ::selection{background:var(--amber);color:var(--ink)}
 
-/* ===== SCROLL PROGRESS BAR ===== */
-.scroll-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--amber),var(--amber-2),#FFD166);z-index:9998;transition:width .1s linear;box-shadow:0 0 10px var(--amber-glow)}
 
 /* ===== LAYOUT ===== */
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
@@ -235,17 +233,7 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
 .pulse-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--amber);animation:pulseDot 1.6s ease-in-out infinite}
 @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
 
-/* ===== FOOTER ===== */
-.footer{background:var(--ink);border-top:1px solid rgba(232,147,10,.2);padding:100px 0 60px;position:relative}
-.footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:200px;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
-.footer__inner{max-width:1200px;margin:0 auto;padding:0 24px}
-@media(min-width:768px){.footer__inner{padding:0 48px}}
-.footer__top{display:flex;flex-direction:column;align-items:center;gap:32px}
-@media(min-width:768px){.footer__top{flex-direction:row;justify-content:space-between}}
-.footer__tagline{margin-top:64px;text-align:center;font-family:var(--font-body);font-weight:400;font-size:22px;font-style:italic;color:var(--snow)}
-.footer__copy{margin-top:48px;text-align:center;font-family:var(--font-body);font-weight:500;font-size:14px;color:var(--fog);letter-spacing:.05em}
-.footer__social{display:inline-flex;align-items:center;gap:12px;color:var(--amber);font-family:var(--font-body);font-weight:700;font-size:16px;letter-spacing:.05em;transition:all .3s;padding:12px 24px;border:1px solid rgba(232,147,10,.3);border-radius:var(--radius-full);background:rgba(232,147,10,.05)}
-.footer__social:hover{background:var(--amber);color:var(--ink);box-shadow:0 0 30px rgba(232,147,10,.4)}
+
 
 /* ===== CONTACT PAGE ===== */
 .contact-grid{display:grid;gap:32px}
@@ -341,18 +329,7 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
 .glow-line{position:absolute;width:200px;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent);opacity:.3}
 .card-grid-bg{position:absolute;inset:0;opacity:.03;background-image:radial-gradient(rgba(255,255,255,.3) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:var(--radius-full);background:rgba(232,147,10,.08);border:1px solid rgba(232,147,10,.15);font-family:var(--font-body);font-size:12px;font-weight:600;color:var(--amber);letter-spacing:.08em;backdrop-filter:blur(8px)}
-.section--ink2 .card{background:rgba(255,255,255,.03);backdrop-filter:blur(8px)}
-.credential{transition:all .3s}
-.credential:hover{padding-left:32px;border-left-color:var(--amber)}
-.pill{transition:all .3s}
-.pill:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
 
-/* ===== FLOATING WHATSAPP BUTTON ===== */
-.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:99;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .3s var(--ease-out-expo);cursor:pointer}
-.whatsapp-float:hover{transform:scale(1.1) translateY(-4px);box-shadow:0 8px 30px rgba(37,211,102,.5)}
-.whatsapp-float svg{width:28px;height:28px;fill:#fff}
-.whatsapp-float::after{content:'Chat with us';position:absolute;right:68px;background:var(--ink-3);color:var(--snow);font-family:var(--font-body);font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--radius-sm);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s;border:1px solid var(--glass-border)}
-.whatsapp-float:hover::after{opacity:1}
 
 /* ===== BACK TO TOP BUTTON ===== */
 .back-to-top{position:fixed;bottom:24px;right:24px;z-index:99;width:44px;height:44px;background:rgba(255,255,255,.06);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(20px);transition:all .3s var(--ease-out-expo);cursor:pointer}
