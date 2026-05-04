@@ -191,12 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function goTo(i) {
-      current = Math.max(0, Math.min(i, total - 1));
+      if (i < 0) i = total - 1;
+      if (i >= total) i = 0;
+      current = i;
       testiTrack.style.transform = 'translateX(' + (-current * slideWidth()) + 'px)';
       dots.forEach((d, idx) => d.classList.toggle('active', idx === current));
     }
 
-    function next() { goTo((current + 1) % total); }
+    function next() { goTo(current + 1); }
 
     // Auto-play
     function play() {
