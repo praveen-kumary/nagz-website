@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Your Free 20-Min Call — Train With Nagz</title>
+  <meta name="description" content="12-week 1-on-1 coaching for busy professionals. Claim your free 20-minute call. No pressure, no pitch — just clarity.">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://www.trainwithnagz.com/get-started">
+  <meta property="og:title" content="Book Your Free 20-Min Call — Train With Nagz">
+  <meta property="og:description" content="Still blaming your schedule for the weight? Let's talk.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trainwithnagz.com/get-started">
+  <meta property="og:image" content="https://www.trainwithnagz.com/images/nagz-about-hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book Your Free 20-Min Call — Train With Nagz">
+  <meta name="twitter:description" content="Still blaming your schedule for the weight? Let's talk.">
+  <meta name="twitter:image" content="https://www.trainwithnagz.com/images/nagz-about-hero.webp">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="images/nagz-training-action.webp" as="image">
+  <style>
+    /* === Landing-page-only additions === */
+    .lp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.015)}
+    .lp-stat{text-align:center;padding:40px 16px;position:relative}
+    .lp-stat+.lp-stat::before{content:'';position:absolute;left:0;top:25%;height:50%;width:1px;background:rgba(232,147,10,.2)}
+    .lp-stat__num{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:900;color:var(--amber);line-height:1}
+    .lp-stat__label{font-family:var(--font-body);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--fog-2);margin-top:10px}
+    @media(max-width:767px){.lp-stats{grid-template-columns:repeat(2,1fr)}.lp-stat{padding:28px 12px}.lp-stat:nth-child(3)::before,.lp-stat:nth-child(1)::before{display:none}}
+
+    .lp-features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+    @media(max-width:767px){.lp-features{grid-template-columns:1fr;gap:16px;margin-top:40px}}
+    .lp-feat{padding:32px 28px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius-lg);transition:all .4s var(--ease-out-expo)}
+    .lp-feat:hover{border-color:rgba(232,147,10,.12);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.25)}
+    .lp-feat__icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,rgba(232,147,10,.12),rgba(232,147,10,.03));border:1px solid rgba(232,147,10,.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+    .lp-feat__icon svg{width:20px;height:20px;stroke:var(--amber);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .lp-feat h3{font-family:var(--font-display);font-weight:700;font-size:17px;color:var(--snow);margin-bottom:8px}
+    .lp-feat p{font-family:var(--font-body);font-weight:400;font-size:14px;color:var(--fog);line-height:1.7}
+
+    .lp-proof .testi-card__quote{-webkit-line-clamp:4}
+
+    /* Carousel overrides for landing */
+    .lp-carousel .testi-carousel__track > .testi-card{flex:0 0 340px;margin-right:20px}
+    @media(max-width:767px){.lp-carousel .testi-carousel__track > .testi-card{flex:0 0 290px;margin-right:16px}}
+    .lp-carousel::before{background:linear-gradient(to right,var(--ink-2),transparent)}
+    .lp-carousel::after{background:linear-gradient(to left,var(--ink-2),transparent)}
+
+    .lp-coach{display:flex;align-items:center;gap:16px;padding:20px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);margin-top:28px}
+    .lp-coach img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid rgba(232,147,10,.35);flex-shrink:0}
+    .lp-coach p{font-family:var(--font-body);font-size:13px;color:var(--fog);line-height:1.6}
+    .lp-coach strong{color:var(--snow);font-weight:600}
+
+    .lp-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:98;padding:12px 16px;background:rgba(5,5,5,.95);backdrop-filter:blur(16px);border-top:1px solid rgba(232,147,10,.15)}
+    .lp-sticky .btn{width:100%;text-align:center;padding:14px;font-size:12px}
+    @media(max-width:767px){.lp-sticky.visible{display:block}}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER — minimal, logo-only for zero distraction -->
+  <header class="landing-header">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/twn-logo.webp" alt="Train With Nagz" class="navbar__logo-img" width="140" height="42">
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="section section--ink" style="padding-top:140px;padding-bottom:0">
+      <div class="container hero-grid">
+        <!-- Copy side -->
+        <div class="fade-up">
+          <span class="eyebrow eyebrow--amber">
+            <span class="eyebrow__line"></span>1-on-1 Fat Loss Coaching
+          </span>
+
+          <h1 class="hero-heading" style="margin-top:24px;font-size:clamp(36px,6vw,64px)">
+            STILL BLAMING<br>YOUR SCHEDULE<br>
+            <span class="hero-heading--amber">FOR THE WEIGHT?</span>
+          </h1>
+
+          <p class="hero-sub" style="margin-top:24px;margin-left:0;margin-right:0;max-width:500px">
+            12-week 1-on-1 coaching designed for professionals who are done starting over. Custom nutrition. Real-time adjustments. Direct access.
+          </p>
+
+          <div style="margin-top:36px">
+            <a href="#lead-form" class="btn btn--amber btn--amber-lg">Claim Your Free 20-Min Call</a>
+          </div>
+
+          <p style="margin-top:14px;color:var(--fog-2);font-weight:300;font-size:13px">
+            No sales pitch. No pressure. Just clarity.
+          </p>
+
+          <div style="margin-top:20px">
+            <span class="avail-badge">
+              <span class="pulse-dot"></span>Currently accepting new clients
+            </span>
+          </div>
+        </div>
+
+        <!-- Image side -->
+        <div class="fade-up fade-up-d1">
+          <div class="floating-img" style="height:520px">
+            <img src="images/nagz-training-action.webp" alt="Coach Nagz during a training session" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS STRIP ========== -->
+    <div class="lp-stats">
+      <div class="lp-stat fade-up">
+        <div class="lp-stat__num">7–12KG</div>
+        <div class="lp-stat__label">Average Fat Loss</div>
+      </div>
+      <div class="lp-stat fade-up fade-up-d1">
+        <div class="lp-stat__num">12</div>
+        <div class="lp-stat__label">Week Programme</div>
+      </div>
+      <div class="lp-stat fade-up fade-up-d2">
+        <div class="lp-stat__num">3X</div>
+        <div class="lp-stat__label">Sessions / Week</div>
+      </div>
+      <div class="lp-stat fade-up fade-up-d3">
+        <div class="lp-stat__num">70%+</div>
+        <div class="lp-stat__label">Clients Extend</div>
+      </div>
+    </div>
+
+    <!-- ========== THE METHOD ========== -->
+    <section class="section section--chalk">
+      <div class="container" style="max-width:1080px">
+        <div class="fade-up text-center" style="max-width:680px;margin:0 auto">
+          <span class="eyebrow eyebrow--cobalt mx-auto">
+            <span class="eyebrow__line"></span>The Real Problem
+          </span>
+          <h2 class="section-heading section-heading--dark" style="margin-top:24px">
+            YOU DON'T HAVE A MOTIVATION PROBLEM.<br>
+            YOU HAVE A <span style="color:var(--amber)">METHOD</span> PROBLEM.
+          </h2>
+          <p style="margin-top:24px;color:var(--fog);font-weight:400;font-size:17px;line-height:1.7">
+            Professionals across India have lost 7–12kg in 12 weeks. Not with extreme diets. With a plan built around a full-time job and a real life — adjusted every week until it works.
+          </p>
+        </div>
+
+        <div class="lp-features">
+          <div class="lp-feat fade-up">
+            <div class="lp-feat__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Built For Your Schedule</h3>
+            <p>Plans designed around your actual work hours, travel days, and real-life constraints — not a generic template.</p>
+          </div>
+          <div class="lp-feat fade-up fade-up-d1">
+            <div class="lp-feat__icon">
+              <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Direct 1-on-1 With Nagz</h3>
+            <p>No assistants. No automated plans. No group chats. You work directly with your coach — every single week.</p>
+          </div>
+          <div class="lp-feat fade-up fade-up-d2">
+            <div class="lp-feat__icon">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Results That Actually Last</h3>
+            <p>Your habits change — not just the number on the scale. That's why 70% of clients extend beyond 12 weeks.</p>
+          </div>
+        </div>
+
+        <div class="text-center fade-up" style="margin-top:48px">
+          <a href="#lead-form" class="btn btn--amber">Book Your Free Call →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S INCLUDED ========== -->
+    <section class="section section--ink">
+      <div class="container" style="max-width:1080px">
+        <div class="fade-up text-center" style="max-width:680px;margin:0 auto">
+          <span class="eyebrow eyebrow--amber mx-auto">
+            <span class="eyebrow__line"></span>The 12-Week Programme
+          </span>
+          <h2 class="section-heading section-heading--light" style="margin-top:24px">
+            EVERYTHING YOU GET.<br>
+            <span class="hero-heading--amber" style="font-size:inherit">NOTHING YOU DON'T.</span>
+          </h2>
+        </div>
+        <div class="grid grid-4" style="margin-top:56px">
+          <div class="method-step fade-up">
+            <div class="method-num">01</div>
+            <h3 class="method-title">Custom Nutrition Plan</h3>
+            <p class="method-body">Built around your TDEE, food preferences, and lifestyle. Not a meal plan from the internet — your plan, adjusted every week.</p>
+          </div>
+          <div class="method-step fade-up fade-up-d1">
+            <div class="method-num">02</div>
+            <h3 class="method-title">Personalised Training</h3>
+            <p class="method-body">Full gym, home setup, or 30 minutes between calls — the programme fits what you have. 3 sessions per week, max.</p>
+          </div>
+          <div class="method-step fade-up fade-up-d2">
+            <div class="method-num">03</div>
+            <h3 class="method-title">Weekly Check-ins</h3>
+            <p class="method-body">Every week, we review data, feedback, and what's shifted. Whatever isn't working gets changed. Immediately.</p>
+          </div>
+          <div class="method-step fade-up fade-up-d3">
+            <div class="method-num">04</div>
+            <h3 class="method-title">Recovery & Stress</h3>
+            <p class="method-body">High cortisol destroys fat loss. Sleep, stress, and recovery protocols are baked in — not an afterthought.</p>
+          </div>
+        </div>
+        <div class="text-center fade-up" style="margin-top:48px">
+          <a href="#lead-form" class="btn btn--amber">Start Your Transformation →</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ========== SOCIAL PROOF — Scrolling Carousel ========== -->
+    <section class="section section--ink2">
+      <div class="container" style="position:relative;z-index:1">
+        <div class="fade-up text-center" style="max-width:640px;margin:0 auto">
+          <span class="eyebrow eyebrow--amber mx-auto">
+            <span class="eyebrow__line"></span>Real Client Results
+          </span>
+          <h2 class="section-heading section-heading--light" style="margin-top:24px">
+            DON'T TAKE OUR WORD FOR IT.<br>
+            <span class="hero-heading--amber" style="font-size:inherit">SEE THEIRS.</span>
+          </h2>
+        </div>
+
+        <div class="testi-carousel lp-carousel fade-up">
+          <div class="testi-carousel__track" id="lp-testi-track">
+            <!-- Vinayaka -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/vinayaka.webp" alt="Vinayaka transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Vinayaka &middot; LOST 10KG</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">LOST 10KG</div>
+                <div class="testi-card__name">Vinayaka</div>
+                <span class="testi-card__city">From Setbacks to Strength</span>
+                <p class="testi-card__quote">"I had health issues and zero motivation. 12 weeks later, I'm the first one at the gym every morning."</p>
+              </div>
+            </div>
+            <!-- Arun -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/arun.webp" alt="Arun transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Arun &middot; LOST 4KG</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">LOST 4KG</div>
+                <div class="testi-card__name">Arun</div>
+                <span class="testi-card__city">Vegetarian Diet, Real Results</span>
+                <p class="testi-card__quote">"Followed a vegetarian diet and lost 4kg in one month. Even when typhoid slowed me down, Nagz adjusted the plan to keep me on track."</p>
+              </div>
+            </div>
+            <!-- Nitin -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/nithin.webp" alt="Nitin transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Nitin &middot; LOST 5KG</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">LOST 5KG</div>
+                <div class="testi-card__name">Nitin</div>
+                <span class="testi-card__city">5 Weeks, Lean Muscle</span>
+                <p class="testi-card__quote">"Lost 5kg in 5 weeks while building lean muscle. The consistency in workouts and diet was the key to this change."</p>
+              </div>
+            </div>
+            <!-- Kumar -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/kumar.webp" alt="Kumar transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Kumar &middot; LOST 8KG</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">LOST 8KG</div>
+                <div class="testi-card__name">Kumar</div>
+                <span class="testi-card__city">Steady Fat Loss in 2 Months</span>
+                <p class="testi-card__quote">"8kg gone in 2 months. The weekly adjustments made all the difference and kept me disciplined through challenges."</p>
+              </div>
+            </div>
+            <!-- Ashwini -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/ashwini.webp" alt="Ashwini transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Ashwini &middot; LOST 7 INCHES</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">LOST 7 INCHES</div>
+                <div class="testi-card__name">Ashwini</div>
+                <span class="testi-card__city">Corporate Professional</span>
+                <p class="testi-card__quote">"7 inches off my waist in 8 weeks — while managing a corporate job and family. Consistency brings real change."</p>
+              </div>
+            </div>
+            <!-- Madhusudhan -->
+            <div class="testi-card">
+              <div class="testi-card__images">
+                <div class="testi-card__img"><img src="testimonials/madhusudhan.webp" alt="Madhusudhan transformation" width="427" height="427" loading="lazy"><span class="testi-card__meta">Madhusudhan</span></div>
+              </div>
+              <div class="testi-card__content">
+                <div class="testi-card__result">CONSISTENT</div>
+                <div class="testi-card__name">Madhusudhan</div>
+                <span class="testi-card__city">Discipline Over Schedule</span>
+                <p class="testi-card__quote">"Busy routine with work and family, but I stay strict with the diet even when I can't make the gym. Proof that nutrition is the foundation."</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi-carousel__controls">
+            <div class="testi-carousel__dots" id="lp-testi-dots"></div>
+          </div>
+        </div>
+
+        <div class="fade-up text-center" style="margin-top:48px">
+          <a href="transformations.html" class="btn btn--outline" style="padding:14px 36px;font-size:12px">View All Transformations →</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ========== ABOUT THE COACH ========== -->
+    <section class="section section--ink">
+      <div class="container hero-grid" style="position:relative;z-index:1">
+        <div class="fade-up hide-on-mobile">
+          <div class="floating-img" style="height:520px">
+            <img src="images/nagz-pushup-close.webp" alt="Coach Nagz" loading="lazy">
+          </div>
+        </div>
+        <div class="fade-up fade-up-d1">
+          <span class="eyebrow eyebrow--cobalt">
+            <span class="eyebrow__line"></span>Your Coach
+          </span>
+          <h2 class="section-heading section-heading--dark" style="margin-top:24px">
+            SOMEONE WHO GETS<br>WHAT YOUR LIFE<br>ACTUALLY LOOKS LIKE.
+          </h2>
+          <div class="floating-img show-on-mobile fade-up fade-up-d2" style="height:360px;margin-top:28px">
+            <img src="images/nagz-pushup-close.webp" alt="Coach Nagz" loading="lazy">
+          </div>
+          <div style="margin-top:28px;color:var(--fog);font-weight:400;font-size:17px;line-height:1.75">
+            <p>Nagendra isn't selling a lifestyle. He's a coach with a background in exercise science, nutrition, and ENU L1 certified training — and his entire approach is built around one thing: making it work for people who have a real life outside the gym.</p>
+            <p style="margin-top:20px">He keeps his intake deliberately small. Every client works directly with Nagz — not an assistant, not an automated programme. You get the coach, every time.</p>
+          </div>
+          <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px">
+            <span class="pill pill--cobalt">Certified Personal Trainer</span>
+            <span class="pill pill--cobalt">ENU L1 Certified Coach</span>
+            <span class="pill pill--cobalt">Nutrition & TDEE Coach</span>
+          </div>
+          <a href="about.html" style="display:inline-flex;align-items:center;margin-top:28px;color:var(--amber);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-family:var(--font-body)">Read the Full Story →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== URGENCY ========== -->
+    <section class="section section--chalk text-center">
+      <div class="container" style="max-width:620px">
+        <div class="fade-up">
+          <span class="eyebrow eyebrow--cobalt mx-auto">
+            <span class="eyebrow__line"></span>Limited Availability
+          </span>
+          <h2 class="section-heading section-heading--dark" style="margin-top:24px">
+            SPOTS ARE LIMITED.<br>INTENTIONALLY.
+          </h2>
+          <p style="margin-top:24px;color:var(--fog);font-weight:400;font-size:17px;line-height:1.7">
+            Coaching intake is capped every month so every client gets real attention. When spots fill up, they fill up. There's no waitlist.
+          </p>
+          <div style="margin-top:28px">
+            <span class="avail-badge"><span class="pulse-dot"></span>Currently accepting new clients this month</span>
+          </div>
+          <div style="margin-top:28px">
+            <a href="#lead-form" class="btn btn--amber btn--amber-lg">Claim Your Spot →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LEAD FORM ========== -->
+    <section id="lead-form" class="section section--ink">
+      <div class="container" style="max-width:540px">
+
+        <div class="fade-up text-center">
+          <span class="eyebrow eyebrow--amber mx-auto">
+            <span class="eyebrow__line"></span>Take The First Step
+          </span>
+          <h2 class="section-heading section-heading--light" style="margin-top:24px">
+            BOOK YOUR FREE<br>20-MINUTE CALL.
+          </h2>
+          <p style="margin-top:20px;color:var(--fog);font-weight:300;font-size:16px;line-height:1.7">
+            Fill in below. Nagz will message you within <strong style="color:var(--snow)">a few hours</strong> to schedule your call. No obligation. No pitch.
+          </p>
+        </div>
+
+        <div class="fade-up fade-up-d1" style="margin-top:40px">
+
+          <!-- Success -->
+          <div id="form-success" class="form-success" style="display:none">
+            <div style="width:64px;height:64px;border:2px solid var(--amber);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 style="font-size:44px;color:var(--amber);line-height:1;font-family:var(--font-display);font-weight:900">WE'VE GOT YOU.</h3>
+            <p style="margin-top:16px;color:var(--snow);font-weight:300;font-size:16px;line-height:1.7">Expect a message from Nagz shortly to schedule your call.</p>
+          </div>
+
+          <!-- Form -->
+          <form id="lead-form-el">
+            <input type="hidden" name="access_key" value="c4ac6476-0aed-49e2-b0a0-93e5a4f547bf">
+            <input type="hidden" name="subject" value="New Lead — Free Call Request — Train With Nagz">
+            <input type="hidden" name="from_name" value="Train With Nagz Landing Page">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">WhatsApp Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="challenge">Biggest Challenge Right Now</label>
+              <select class="form-input form-select" id="challenge" name="challenge" required>
+                <option value="" disabled selected>Choose one —</option>
+                <option>Can't lose weight despite eating okay</option>
+                <option>No time to train consistently</option>
+                <option>Keep falling off every programme</option>
+                <option>Not sure where to even start</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--amber" style="width:100%;padding:18px;font-size:13px;letter-spacing:.2em;margin-top:8px">
+              BOOK MY FREE CALL →
+            </button>
+
+            <p style="margin-top:14px;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--fog-2);font-weight:400;font-size:12px">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Your details are private. We don't spam or share data.
+            </p>
+          </form>
+
+          <!-- Coach trust strip -->
+          <div class="lp-coach">
+            <img src="images/nagz-about-hero.webp" alt="Coach Nagz">
+            <p><strong>You'll speak directly with Nagz</strong> — Certified Personal Trainer, ENU L1 Coach, and the person who'll design your entire programme.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TRUST BAR ========== -->
+    <section class="trust-bar">
+      <div class="container">
+        <p class="trust-bar__text">
+          <span>Certified Personal Trainer</span><span class="trust-bar__dot">·</span>
+          <span>ENU L1 Certified Coach</span><span class="trust-bar__dot">·</span>
+          <span>12-Week Proven System</span><span class="trust-bar__dot">·</span>
+          <span>Real Clients</span><span class="trust-bar__dot">·</span>
+          <span>Real Results</span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-premium">
+    <div class="footer-premium__inner">
+      <div class="footer-premium__grid">
+        <div class="footer-premium__brand">
+          <a href="index.html" class="footer-premium__logo"><img src="images/twn-logo.webp" alt="Train With Nagz" class="footer-premium__logo-img" loading="lazy"></a>
+          <p class="footer-premium__desc">1-on-1 fat loss coaching built around your actual schedule. For working professionals who are tired of starting over.</p>
+          <div class="footer-premium__socials">
+            <a href="https://instagram.com/trainwithnagz" target="_blank" rel="noopener noreferrer" class="footer-premium__social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/919611288599" target="_blank" rel="noopener noreferrer" class="footer-premium__social-icon" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+            <a href="mailto:somasundarnagendra@gmail.com" class="footer-premium__social-icon" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-premium__links-group">
+          <h4 class="footer-premium__heading">Navigation</h4>
+          <nav class="footer-premium__nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Nagz</a>
+            <a href="transformations.html">Transformations</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-premium__cta">
+          <h4 class="footer-premium__heading">Ready to Start?</h4>
+          <p class="footer-premium__cta-text">Book your free 20-minute clarity call today. No pitch, no pressure.</p>
+          <a href="#lead-form" class="btn btn--amber" style="width:100%;text-align:center;padding:14px;font-size:12px">Book Free Call</a>
+        </div>
+      </div>
+      <div class="footer-premium__bottom">
+        <div class="footer-premium__copy">&copy; 2026 Train With Nagz. All rights reserved.</div>
+        <div class="footer-premium__legal"><a href="privacy.html">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="lp-sticky" id="lp-sticky">
+    <a href="#lead-form" class="btn btn--amber">Book Your Free Call →</a>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919611288599" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 2.002c-7.732 0-14.002 6.27-14.002 14.002 0 2.468.657 4.876 1.904 6.988L2 30l7.168-1.88A13.94 13.94 0 0 0 16.004 30c7.732 0 14.002-6.27 14.002-14.002-.004-7.728-6.274-13.996-14.002-13.996zm8.17 19.762c-.344.968-2.016 1.852-2.776 1.968-.716.108-1.628.152-2.628-.164a24.1 24.1 0 0 1-2.38-.88c-4.188-1.808-6.924-6.044-7.132-6.324-.208-.276-1.7-2.264-1.7-4.316s1.076-3.064 1.46-3.48c.384-.42.836-.524 1.116-.524.28 0 .56.004.804.016.26.012.608-.1.948.724.344.836 1.18 2.876 1.284 3.084.104.208.172.452.036.728-.14.28-.208.452-.416.696-.208.244-.436.544-.624.728-.208.208-.424.432-.184.848.244.416 1.08 1.784 2.32 2.892 1.592 1.42 2.936 1.86 3.352 2.068.416.208.66.172.904-.104.244-.28 1.048-1.22 1.328-1.64.28-.42.556-.348.936-.208.38.14 2.42 1.14 2.836 1.348.416.208.692.312.796.484.104.168.104.976-.24 1.944z"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Sticky mobile CTA
+    !function(){
+      var s=document.getElementById('lp-sticky'),v=false;
+      if(!s)return;
+      window.addEventListener('scroll',function(){
+        if(window.scrollY>500&&!v){s.classList.add('visible');v=true}
+        else if(window.scrollY<=500&&v){s.classList.remove('visible');v=false}
+      },{passive:true});
+    }();
+
+    // Landing page carousel with auto-play
+    !function(){
+      var track=document.getElementById('lp-testi-track');
+      if(!track)return;
+      var cards=track.querySelectorAll('.proof-card') || track.querySelectorAll('.testi-card');
+      if(!cards.length)return;
+      var dotsWrap=document.getElementById('lp-testi-dots');
+      var idx=0,cardW,gap=20,maxIdx,autoTimer=null;
+      function measure(){
+        var cs=getComputedStyle(cards[0]);
+        cardW=cards[0].offsetWidth;
+        gap=parseFloat(cs.marginRight)||parseFloat(cs.gap)||20;
+        var visible=Math.floor(track.parentElement.offsetWidth/(cardW+gap));
+        maxIdx=Math.max(0,cards.length-visible);
+        if(idx>maxIdx)idx=maxIdx;
+        track.style.transform='translateX('+ -(idx*(cardW+gap)) +'px)';
+      }
+      function goTo(i){
+        idx=Math.max(0,Math.min(i,maxIdx));
+        track.style.transform='translateX('+ -(idx*(cardW+gap)) +'px)';
+        if(dotsWrap){
+          var dots=dotsWrap.querySelectorAll('.testi-carousel__dot');
+          dots.forEach(function(d,j){d.classList.toggle('active',j===idx)});
+        }
+      }
+      function next(){ goTo(idx>=maxIdx?0:idx+1); }
+      function play(){ stop(); autoTimer=setInterval(next,4000); }
+      function stop(){ if(autoTimer){clearInterval(autoTimer);autoTimer=null;} }
+      function pause(){ stop(); setTimeout(play,8000); }
+      function buildDots(){
+        if(!dotsWrap)return;
+        dotsWrap.innerHTML='';
+        for(var i=0;i<=maxIdx;i++){
+          var d=document.createElement('button');
+          d.className='testi-carousel__dot'+(i===idx?' active':'');
+          d.setAttribute('aria-label','Slide '+(i+1));
+          d.dataset.i=i;
+          d.addEventListener('click',function(){goTo(+this.dataset.i); pause();});
+          dotsWrap.appendChild(d);
+        }
+      }
+      // Drag
+      var startX,startT,dragging=false;
+      track.addEventListener('pointerdown',function(e){startX=e.clientX;startT=-(idx*(cardW+gap));dragging=true;track.classList.add('is-dragging');track.setPointerCapture(e.pointerId);stop();});
+      track.addEventListener('pointermove',function(e){if(!dragging)return;var dx=e.clientX-startX;track.style.transform='translateX('+(startT+dx)+'px)'});
+      track.addEventListener('pointerup',function(e){if(!dragging)return;dragging=false;track.classList.remove('is-dragging');var dx=e.clientX-startX;if(dx<-40)goTo(idx+1);else if(dx>40)goTo(idx-1);else goTo(idx);pause();});
+      measure();buildDots();play();
+      window.addEventListener('resize',function(){measure();buildDots();});
+    }();
+  </script>
+</body>
+</html>

@@ -287,4 +287,32 @@ document.addEventListener('DOMContentLoaded', () => {
     play();
   }
 
+  /* ---- FAQ Accordion ---- */
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const header = item.querySelector('.faq-item__header');
+    if (header) {
+      header.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        // Close all others
+        faqItems.forEach(other => other.classList.remove('open'));
+        // Toggle clicked
+        if (!isOpen) item.classList.add('open');
+      });
+    }
+  });
+
+  /* ---- Scroll Indicator — hide on scroll ---- */
+  const scrollInd = document.querySelector('.scroll-indicator');
+  if (scrollInd) {
+    let hidden = false;
+    window.addEventListener('scroll', () => {
+      if (!hidden && window.scrollY > 100) {
+        scrollInd.style.opacity = '0';
+        scrollInd.style.pointerEvents = 'none';
+        hidden = true;
+      }
+    }, { passive: true });
+  }
+
 });

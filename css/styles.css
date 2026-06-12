@@ -618,6 +618,54 @@ p,li,span,a,label,input,select,textarea{font-family:var(--font-body);-webkit-fon
   .footer-premium__cta{text-align:center}
 }
 
-.footer-premium__bottom{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:32px;border-top:1px solid rgba(255,255,255,.05);gap:16px;text-align:center}
-@media(min-width:768px){.footer-premium__bottom{flex-direction:row;justify-content:center}}
+.footer-premium__bottom{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:32px;border-top:1px solid rgba(255,255,255,.05);gap:8px;text-align:center}
+@media(min-width:768px){.footer-premium__bottom{flex-direction:row;justify-content:center;gap:24px}}
 .footer-premium__copy{font-family:var(--font-body);font-size:14px;color:var(--fog-2)}
+
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.whatsapp-float{position:fixed;bottom:24px;left:24px;z-index:99;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4),0 2px 8px rgba(0,0,0,.3);transition:all .3s var(--ease-out-expo);cursor:pointer;text-decoration:none;border:none}
+.whatsapp-float:hover{transform:translateY(-4px) scale(1.08);box-shadow:0 8px 32px rgba(37,211,102,.5),0 4px 16px rgba(0,0,0,.3)}
+.whatsapp-float:active{transform:translateY(0) scale(.96)}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
+.whatsapp-float::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:rgba(37,211,102,.3);animation:whatsappPulse 2s ease-in-out infinite;pointer-events:none}
+@keyframes whatsappPulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.2);opacity:0}}
+@media(max-width:767px){.whatsapp-float{bottom:16px;left:16px;width:48px;height:48px}.whatsapp-float svg{width:24px;height:24px}}
+
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.6;transition:opacity .3s}
+.scroll-indicator__text{font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--fog-2)}
+.scroll-indicator__arrow{width:24px;height:24px;animation:scrollBounce 2s ease-in-out infinite}
+.scroll-indicator__arrow svg{stroke:var(--amber);stroke-width:2;fill:none}
+@keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@media(max-width:767px){.scroll-indicator{bottom:20px}.scroll-indicator__text{font-size:9px}}
+
+/* ===== PAGE LOAD ANIMATION ===== */
+body{animation:pageIn .5s ease-out}
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+
+/* ===== COLLAPSIBLE FAQ ===== */
+.faq-item{cursor:pointer;border-left:3px solid var(--cobalt);padding-left:20px;transition:all .3s var(--ease-out-expo)}
+.faq-item:hover{padding-left:28px;border-left-color:var(--amber)}
+.faq-item__header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.faq-item__chevron{width:18px;height:18px;flex-shrink:0;stroke:var(--fog);stroke-width:2;fill:none;transition:transform .3s var(--ease-out-expo),stroke .3s}
+.faq-item.open .faq-item__chevron{transform:rotate(180deg);stroke:var(--amber)}
+.faq-item__answer{max-height:0;overflow:hidden;transition:max-height .4s var(--ease-out-expo),margin .3s;margin-top:0}
+.faq-item.open .faq-item__answer{max-height:200px;margin-top:8px}
+
+/* ===== SKIP TO CONTENT ===== */
+.skip-link{position:absolute;top:-100px;left:16px;z-index:200;background:var(--amber);color:var(--ink);padding:12px 24px;border-radius:var(--radius-sm);font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;transition:top .2s}
+.skip-link:focus{top:16px}
+
+/* ===== FOCUS STYLES ===== */
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.btn:focus-visible{outline-offset:4px;box-shadow:0 0 0 4px var(--amber-glow)}
+.form-input:focus-visible{outline:none}
+
+/* ===== MOBILE NAV CTA ===== */
+.navbar__mobile-cta{display:block;margin-top:8px;text-align:center;padding:14px 24px;font-size:12px;width:100%;border-radius:var(--radius)}
+
+/* ===== FOOTER LEGAL ===== */
+.footer-premium__legal{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.footer-premium__legal a{font-family:var(--font-body);font-size:13px;color:var(--fog-2);transition:color .3s}
+.footer-premium__legal a:hover{color:var(--amber)}
+@media(max-width:767px){.footer-premium__legal{justify-content:center}}

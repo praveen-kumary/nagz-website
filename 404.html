@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | Train With Nagz</title>
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="images/twn-logo.webp" alt="Train With Nagz" class="navbar__logo-img" width="140" height="42"></a>
+      <nav class="navbar__links">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="transformations.html" class="navbar__link">Transformations</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--amber navbar__cta" style="padding:12px 24px;font-size:11px">Book Free Call</a>
+      <button class="navbar__burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="nav-mobile">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="transformations.html" class="navbar__link">Transformations</a>
+      <a href="contact.html" class="navbar__link">Contact</a>
+      <a href="contact.html" class="btn btn--amber navbar__mobile-cta">Book Free Call</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--ink" style="min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+      <div class="glow glow--amber" style="left:50%;top:50%;transform:translate(-50%,-50%)"></div>
+      <div class="container text-center" style="position:relative;z-index:1;max-width:640px">
+        <div class="fade-up">
+          <div style="font-family:var(--font-display);font-size:clamp(100px,20vw,180px);font-weight:900;line-height:.85;background:linear-gradient(135deg,var(--amber),#FFD166,var(--amber-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 40px rgba(232,147,10,.2))">404</div>
+          <h1 class="section-heading section-heading--light" style="margin-top:24px;font-size:clamp(28px,4vw,44px)">PAGE NOT FOUND.</h1>
+          <p style="margin-top:20px;color:var(--fog);font-weight:300;font-size:17px;line-height:1.7;max-width:480px;margin-left:auto;margin-right:auto">The page you're looking for doesn't exist or has been moved. But your fitness journey doesn't have to stop here.</p>
+          <div style="margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+            <a href="index.html" class="btn btn--amber">Go Home</a>
+            <a href="contact.html" class="btn btn--outline">Book a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
